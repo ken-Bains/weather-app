@@ -5,6 +5,7 @@ $(document).ready(function () {
     if (localStorage.getItem("listOfCities") !== null) {
         cityArr = JSON.parse(localStorage.getItem("listOfCities"));
         showCityHistory();
+        getData(cityArr[0]);
     }
 
     $("#citySearchBtn").on("click", function (e) {
