@@ -1,0 +1,21 @@
+.indexStyle {
+    padding: 8px;
+    color: white;
+}
+
+.hideElement {
+    display: none;
+}
+
+@media screen and (max-width: 888px) {
+    .col-md-2{
+        padding:0 !important;
+    }
+}
+
+@media (min-width: 575.999px) {
+    .ml-sm-auto {
+        margin-left: 0 !important;
+    }
+
+}

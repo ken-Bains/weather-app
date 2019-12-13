@@ -45,17 +45,23 @@
       </nav>
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-          <h1 class="h2">Dashboard</h1>
-        </div>
-
-        <canvas class="my-4" id="myChart"></canvas>
-        <!--width="900" height="380"></canvas>-->
-
-        <h2>Section title</h2>
-        <div id="fiveDayForcastWrapper">
-          <div class="card-deck">
-            <!-- dynamically added cards showing 5 day forcast-->
+        <h2 id="greetingText" class="text-center mt-5 pt-5">Please Search A City</h2>
+        <div id="mainContentWrapper" class="hideElement">
+          <div class="card mb-4">
+            <h3 class="card-header bg-transparent" id="cityName"></h3>
+            <div class="card-body">
+              <p class="mb-4" id="tempDiv"></p>
+              <p class="mb-4" id="humdityDiv"></p>
+              <p class="mb-4" id="windDiv"></p>
+              <p class="mb-4" id="uvDiv"></p>
+            </div>
+          </div>
+  
+          <div id="fiveDayForcastWrapper">
+            <h3>5-Day Forcast: </h3>
+            <div class="card-deck">
+              <!-- dynamically added cards showing 5 day forcast-->
+            </div>
           </div>
 
         </div>
